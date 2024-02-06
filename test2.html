@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETITION MASTER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="submitform.html">
+    <style>
+    nav{
+      text-decoration: solid;
+      background: transparent;
+      float:right;
+      width: 100%;
+      background-image: linear-gradient(to right red,white);
+      
+    }
+   ul{
+    display: inline-flex;
+    float: right;
+    list-style: none;
+   }
+   li{
+    margin: 2px;
+    text-decoration: none;
+    
+   }
+   a{
+    text-decoration:palegreen;
+    color:black;
+    padding: 10px;
+
+   }
+   a:hover{
+color:black;
+background-color:red;
+border-color: white;
+box-sizing: inherit;
+ }
+   #whatsapp{
+    width: 3px;
+    height: 3px;
+    background-image: url("whatsapp icon.webp");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   }
+   #insta{
+    width: 3px;
+    height: 3px;
+    background-image: url("insta icon.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   }
+   #twitter{
+    width: 3px;
+    height: 3px;
+    background-image: url("twitter icon.webp");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   }
+   * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:black;
+  padding: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(to right,black,palevioletred);
+}
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 40px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+.row,
+.row > .column {
+  padding: 8px;
+}
+.column {
+  float: left;
+  width: 25%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content {
+  background-color:whitesmoke;
+  padding: 10px;
+}
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+  </style>
+
+<script>
+    function EnterName() {
+        let user = document.getElementById("name").value ;
+
+        document.getElementById("demo").innerHTML =
+            "Welcome to Petition Master " + user;
+    }
+</script>
+
+</head>
+<body>
+    <nav>
+<div id="logo">
+  <img id="lo" src="petitionimage.jpg" alt="logo">
+  <h2>Petition Master.com</h2>
+</div>
+     
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="petition2.html">Petition Box</a></li> 
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+             <li><a href="#" id="whatsapp"></a></li>
+             <li><a href="#" id="insta"></a></li>
+             <li><a href="#" id="twitter"></a></li>
+            </ul>
+     </nav>   
+   <section id="topic">
+   <h1>PETITION MASTER</h1>
+        <p>Welcome to our awesome petition page!</p>
+        <input id="name" type="text" placeholder="Username"required>
+<button type="button" onclick="EnterName()">Submit</button>
+<p id="demo"></p>
+   </section>
+    <section>    
+
+<p>Welcome to the Petition Master</p>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="images (1).jpg" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images (1).jpg" alt="Lights" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="petitionimage.jpg" alt="Nature" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="wordshavepower.jpg" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <img src="onlinepetition image.jpg" alt="Bear" style="width:50%">
+  <h3>Some Other Work</h3>
+  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+</div>
+</body>
+</html>
+</section>
+    <footer>
+        <p> @2024 PETITION MASTER. All rights reserved.</p>
+        <a href="#" id="whatsapp"></a>
+        <a href="#" id="insta"></a> 
+        <a href="#" id="twitter"></a>
+    </footer>
+</body>
+</html>
